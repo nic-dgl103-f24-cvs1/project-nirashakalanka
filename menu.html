@@ -1,68 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Big Brisket Barbecue - Menu</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="index.html">
-        <img class="logo" src="images/logo.png" alt="Big Brisket Barbecue logo">
-      </a>
-      <ul class="nav-links">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Brisket Barbecue - Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            class="logo"
+            src="images/logo.png"
+            alt="Big Brisket Barbecue logo"
+          />
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li>
+            <a href="custom-brisket-orders.html">Custom Brisket Orders</a>
+          </li>
+        </ul>
+        <div class="menu-icons">
+          <div class="hamburger" onclick="toggleMenu()">
+            <span class="lines">≣</span>
+          </div>
+          <div class="close-bars" onclick="toggleMenu()">
+            <span class="lines">✕</span>
+          </div>
+        </div>
+      </nav>
+      <ul class="nav-links-mobile">
         <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
         <li><a href="custom-brisket-orders.html">Custom Brisket Orders</a></li>
       </ul>
-      <div class="menu-icons">
-        <div class="hamburger" onclick="toggleMenu()">
-          <span class="lines">≣</span>
-        </div>
-        <div class="close-bars" onclick="toggleMenu()">
-          <span class="lines">✕</span>
-        </div>
-      </div>
-    </nav>
-    <ul class="nav-links-mobile">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu</a></li>
-      <li><a href="custom-brisket-orders.html">Custom Brisket Orders</a></li>
-    </ul>
-  </header>
+    </header>
 
-  <main>
-    <section>
-      <h2>Menu</h2>
-      <p>Our seasonal hours:  
-        - Monday to Friday: Closed
-        - Saturday: 11:00 AM - 4:00 PM  
-        - Sunday: Closed  
+    <main>
+      <!-- Block 1: Video Section -->
+      <section class="menu-video">
+        <h1>Big Brisket<br />Barbecue</h1>
+        <video autoplay loop muted>
+          <source src="videos/main-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- Block 2: Intro Section -->
+      <section class="menu-intro">
+        <p>
+          Explore the mouthwatering offerings of Big Brisket Barbecue. From
+          tender brisket to delicious sides, we've got something for everyone!
+        </p>
+      </section>
+
+      <!-- Block 3: Signature Dishes -->
+      <section class="signature-dishes">
+        <h2>Signature Dishes</h2>
+        <div class="dishes-grid">
+          <div class="dish">
+            <img src="images/brisket-plate.jpg" alt="Brisket" />
+            <h3>Smoked Brisket</h3>
+            <p>
+              Perfectly smoked for 12 hours, this brisket will melt in your
+              mouth.
+            </p>
+            <p class="dish-price">$18.99</p>
+          </div>
+          <div class="dish">
+            <img src="images/ribs-plate.jpg" alt="Ribs" />
+            <h3>BBQ Ribs</h3>
+            <p>
+              Fall-off-the-bone ribs glazed with our signature barbecue sauce.
+            </p>
+            <p class="dish-price">$16.99</p>
+          </div>
+          <div class="dish">
+            <img src="images/smash-burger.jpg" alt="Smash Burger" />
+            <h3>Smash Burger</h3>
+            <p>
+              Juicy beef patty with melted cheese, lettuce, tomato, and pickles.
+            </p>
+            <p class="dish-price">$9.99</p>
+          </div>
+          <div class="dish">
+            <img src="images/poutine.jpg" alt="Poutine" />
+            <h3>Regular Poutine</h3>
+            <p>Crispy fries topped with cheese curds and smothered in gravy.</p>
+            <p class="dish-price">$6.99</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Block 4: Hours -->
+      <section class="menu-hours">
+        <h2>Seasonal Hours and Pricing</h2>
+        <div class="hours">
+          <p><strong>Seasonal Hours:</strong></p>
+          <ul>
+            <li>Saturday: 11:00 AM - 4:00 PM</li>
+            <li>Sunday to Friday: Closed</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Big Brisket Barbecue. All rights reserved.</p>
+      <p class="disclaimer">
+        “This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.”
       </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Big Brisket Barbecue. All rights reserved.</p>
-    <p>
-      “This is a fictional website that was designed and coded as an
-      educational exercise. It is not intended to be seen outside of the class
-      environment. None of the content and images were approved by the
-      business owner.”
-    </p>
-  </footer>
-  <script>
-    function toggleMenu() {
-      const menuIcons = document.querySelector('.menu-icons');
-      menuIcons.classList.toggle('active'); // Toggles the 'active' class
-      const navLinksMobile = document.querySelector('.nav-links-mobile');
-      navLinksMobile.classList.toggle('active');
-    }
-  </script>
-</body>
+      <div class="social-icons">
+        <img src="images/facebook.png" alt="Facebook icon" />
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="images/youtube.png" alt="Youtube icon" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="Instagram icon" />
+        </a>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const menuIcons = document.querySelector(".menu-icons");
+        menuIcons.classList.toggle("active"); // Toggles the 'active' class
+        const navLinksMobile = document.querySelector(".nav-links-mobile");
+        navLinksMobile.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>
