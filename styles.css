@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Font imported from Google Fonts */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fff2e6;
+}
+
+color-scheme {
+    --color-primary: #bc7939;
+    --color-secondary: #FFD54F;
+    --color-neutral: #fff2e6;
+    --color-highlight: #4E4E4E;
+}
