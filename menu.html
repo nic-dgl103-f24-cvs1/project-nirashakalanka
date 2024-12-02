@@ -11,14 +11,29 @@
 </head>
 <body>
   <header>
-    <h1>Big Brisket Barbecue</h1>
     <nav>
-      <ul>
+      <a href="index.html">
+        <img class="logo" src="images/logo.png" alt="Big Brisket Barbecue logo">
+      </a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="custom-brisket-orders.html">Custom Brisket Orders</a></li>
       </ul>
+      <div class="menu-icons">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span class="lines">≣</span>
+        </div>
+        <div class="close-bars" onclick="toggleMenu()">
+          <span class="lines">✕</span>
+        </div>
+      </div>
     </nav>
+    <ul class="nav-links-mobile">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="custom-brisket-orders.html">Custom Brisket Orders</a></li>
+    </ul>
   </header>
 
   <main>
@@ -34,6 +49,20 @@
 
   <footer>
     <p>&copy; 2024 Big Brisket Barbecue. All rights reserved.</p>
+    <p>
+      “This is a fictional website that was designed and coded as an
+      educational exercise. It is not intended to be seen outside of the class
+      environment. None of the content and images were approved by the
+      business owner.”
+    </p>
   </footer>
+  <script>
+    function toggleMenu() {
+      const menuIcons = document.querySelector('.menu-icons');
+      menuIcons.classList.toggle('active'); // Toggles the 'active' class
+      const navLinksMobile = document.querySelector('.nav-links-mobile');
+      navLinksMobile.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
