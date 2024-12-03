@@ -58,8 +58,17 @@
 
     <main>
       <!-- Introduction Section -->
+      <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <img src="images/meat-smoker.jpg" alt="Brisket on a smoker" />
+        <div class="hero-section-text">
+          <h1>Big Brisket<br />Barbecue</h1>
+          <p>"Made with Love, Served with Pride."</p>
+        </div>
+      </section>
       <section class="custom-intro">
         <h2>Custom Brisket Orders</h2>
+        <!-- Written by ChatGPT -->
         <p>
           Order a custom brisket, made to your specifications. Perfect for
           family dinners, parties, and celebrations. Let us know your
@@ -74,12 +83,20 @@
          <!-- Written by ChatGPT -->
         <form id="brisket-order-form">
           <div class="form-group">
-            <label for="size">Choose Your Size:</label>
-            <select id="size" name="size">
-              <option value="small">Small (1-2 kg)</option>
-              <option value="medium">Medium (3-4 kg)</option>
-              <option value="large">Large (5-6 kg)</option>
-            </select>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="size">Choose Your number of Pounds:</label>
+            <input
+              type="number"
+              id="size"
+              name="size"
+              min="1"
+              max="10"
+              placeholder="1-10"
+              required
+            />
           </div>
 
           <div class="form-group">
@@ -94,8 +111,9 @@
           <div class="form-group">
             <label for="cooking-style">Cooking Style:</label>
             <select id="cooking-style" name="cooking-style">
-              <option value="traditional">Traditional Smoked</option>
+              <option value="smoked">Smoked</option>
               <option value="grilled">Grilled</option>
+              <option value="roasted">Roasted</option>
             </select>
           </div>
 
@@ -155,5 +173,13 @@
         </a>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const menuIcons = document.querySelector(".menu-icons");
+        menuIcons.classList.toggle("active"); // Toggles the 'active' class
+        const navLinksMobile = document.querySelector(".nav-links-mobile");
+        navLinksMobile.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

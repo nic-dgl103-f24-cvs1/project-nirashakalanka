@@ -37,9 +37,6 @@
           <div class="hamburger" onclick="toggleMenu()">
             <span class="lines">≣</span>
           </div>
-          <div class="close-bars" onclick="toggleMenu()">
-            <span class="lines">✕</span>
-          </div>
         </div>
       </nav>
       <ul class="nav-links-mobile">
@@ -67,9 +64,9 @@
             Big Brisket is owned by Jordan Sorrenti, a foodie who just can't
             retire. He loves smoked meat and especially barbecue brisket. He's
             owned Restaurants (Barbecue, brewery, fine dining, cafe and
-            catering) in London Ontario, Calgary Alberta and Gabriola Island over
-            the years. Now settled in the Comox Valley and doing what he loves,
-            serving up great food at affordable prices.
+            catering) in London Ontario, Calgary Alberta and Gabriola Island
+            over the years. Now settled in the Comox Valley and doing what he
+            loves, serving up great food at affordable prices.
           </p>
         </div>
         <img
@@ -96,6 +93,7 @@
             <h3>Pulled Pork Sandwich</h3>
           </div>
         </div>
+        <a href="menu.html" class="view-menu-btn">View Full Menu</a>
       </section>
 
       <!-- Block 3: Customer Testimonials -->
@@ -147,14 +145,53 @@
         </article>
       </section>
 
-      <!-- Block 7: Contact Us -->
+      <!-- Block 7: Map -->
+      <section class="map">
+        <h2>Visit Us</h2>
+        <div
+          style="
+            max-width: 100%;
+            list-style: none;
+            transition: none;
+            overflow: hidden;
+            height: 500px;
+          "
+        >
+          <div
+            id="embedded-map-display"
+            style="height: 100%; width: 100%; max-width: 100%"
+          >
+            <iframe
+              style="height: 100%; width: 100%; border: 0"
+              frameborder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=courtenay&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            ></iframe>
+          </div>
+          <a
+            class="embedded-map-code"
+            href="https://kbj9qpmy.com/bp"
+            id="grab-maps-authorization"
+            >Broadband Providers</a
+          ><style>
+            #embedded-map-display img {
+              max-height: none;
+              max-width: none !important;
+              background: none !important;
+            }
+          </style>
+        </div>
+      </section>
+
+      <!-- Block 8: Contact Us -->
       <section class="contact-us">
         <h2>Contact Us</h2>
         <p>Got questions? We'd love to hear from you!</p>
         <p>Email: contact@bigbrisketbbq.com</p>
         <p>Phone: (123) 456-7890</p>
-        <a href="contact.html" class="btn">Get in Touch</a>
+        <a href="#" class="btn">Get in Touch</a>
       </section>
+
+      
     </main>
 
     <footer>
